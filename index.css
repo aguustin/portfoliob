@@ -1,11 +1,18 @@
+@font-face {
+    font-family: joystix;
+    src: url("./font/joystix\ monospace.otf") format("opentype");
+}
+
 body{
     overflow-y: scroll;
+    font-family: 'joystix', sans-serif;
 }
 
 body::-webkit-scrollbar{
     width: 8px;
     background-color: rgb(74, 74, 179);
     opacity: .8;
+                                                
 }
 
 body::-webkit-scrollbar-thumb{
@@ -25,6 +32,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     justify-content: center;
     z-index: 2;
+    animation: shadowAnim 3s linear infinite;
 }
 
 #more{
@@ -42,9 +50,22 @@ body::-webkit-scrollbar-thumb{
     border-radius: 10rem;
 }
 
-@keyframes shadow {
+@keyframes shadowAnim {
     0%{
-        
+        box-shadow: 0px 0px 13px -1px rgba(46,186,4,0.75);
+        -webkit-box-shadow: 0px 0px 13px -1px rgba(46,186,4,0.75);
+        -moz-box-shadow: 0px 0px 13px -1px rgba(46,186,4,0.75);
+    }
+
+    50%{
+        box-shadow: 7px 0px 13px -1px rgba(46,186,4,0.75);
+        -webkit-box-shadow: 7px 0px 13px -1px rgba(46,186,4,0.75);
+        -moz-box-shadow: 7px 0px 13px -1px rgba(46,186,4,0.75);
+    }
+    100%{
+        box-shadow: 0px 0px 13px -1px rgba(46,186,4,0.75);
+        -webkit-box-shadow: 0px 0px 13px -1px rgba(46,186,4,0.75);
+        -moz-box-shadow: 0px 0px 13px -1px rgba(46,186,4,0.75);
     }
 }
 
@@ -58,7 +79,7 @@ body::-webkit-scrollbar-thumb{
     background-color: transparent;
     border-style: none;
     color: rgb(130, 130, 255);
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 600;
 }
 
@@ -67,7 +88,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .contact{
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .mail{
@@ -76,7 +97,7 @@ body::-webkit-scrollbar-thumb{
     color: rgb(255, 167, 255);
     height: 0px;
     margin-right: 14rem;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 
@@ -90,23 +111,23 @@ body::-webkit-scrollbar-thumb{
 }
 
 #name{
-    font-size: 72px;
+    font-size: 62px;
     color: rgb(130, 130, 255);
 }
 
 #lastname{
     margin-left: 20px;
-    font-size: 72px;
+    font-size: 62px;
     color: rgb(255, 167, 255);
 }
 
 .welcome{
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .download-cv{
     padding: .7rem;
-    font-size: 18px;
+    font-size: 14px;
     border: none;
     border-radius: 7px;
     background-color: rgb(255, 167, 255);
@@ -161,18 +182,18 @@ body::-webkit-scrollbar-thumb{
 }
 
 .aboutme h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .aboutme h2{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .aboutme p{
     color: rgb(130, 130, 255);
     margin-bottom: 3rem;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .portfolio{
@@ -187,7 +208,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .portfolio h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .portfolio h2{
@@ -196,7 +217,6 @@ body::-webkit-scrollbar-thumb{
 
 .portfolio p{
     color: rgb(130, 130, 255);
-    font-weight: 600;
 }
 
  .card-project-container{
@@ -229,7 +249,6 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     justify-content: center;
     color: white;
-    font-weight: 600;
 }
 
 .project-lenguages li{
@@ -268,7 +287,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .education h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .education h2{
@@ -311,6 +330,14 @@ body::-webkit-scrollbar-thumb{
  font-weight: 600;
 }
 
+.certify h2{
+    font-size: 25px;
+}
+
+.certify h3{
+    font-size: 20px;
+}
+
 .skills{
     width: 90%;
     margin-left: 6rem;
@@ -318,7 +345,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .skills h1{
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(255, 178, 245);
 }
 
@@ -327,7 +354,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .skills-divs h2{
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(255, 131, 238);
 }
 
@@ -339,7 +366,6 @@ body::-webkit-scrollbar-thumb{
 
 .skills-divs label{
     color: rgb(252, 242, 242);
-    font-weight: 600;
 }
 
 .skills-divs li{
@@ -352,7 +378,7 @@ body::-webkit-scrollbar-thumb{
 
 .contact h1{
     margin-left: 6rem;
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(252, 242, 242);
 }
 
@@ -376,6 +402,7 @@ body::-webkit-scrollbar-thumb{
 .contact-divs b{
     margin-left: .8rem;
     color: rgb(255, 131, 238);
+    font-weight: 400;
 }
 
 .contact-divs a{
@@ -431,7 +458,7 @@ body::-webkit-scrollbar-thumb{
     }
 
     #name, #lastname {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     #aboutme-text{
@@ -490,11 +517,11 @@ body::-webkit-scrollbar-thumb{
     }
 
     .certify h2{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .certify h3{
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .skills{
