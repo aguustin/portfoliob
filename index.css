@@ -10,15 +10,16 @@ body{
 
 body::-webkit-scrollbar{
     width: 8px;
-    background-color: rgb(74, 74, 179);
+    background-color: rgb(15, 15, 19);
     opacity: .8;
                                                 
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color: rgb(92, 92, 230);
+    background-color: rgb(51, 51, 61);
     border-radius: 10px;
 }
+
 
 .father-div{
     border-bottom: 1px solid rgb(74, 74, 179);
@@ -42,6 +43,10 @@ body::-webkit-scrollbar-thumb{
     display: none;
     background-color: transparent;
     border: none;
+    outline: none;
+}
+
+.shortcuts button{
     outline: none;
 }
 
@@ -78,7 +83,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: 13px;
     background-color: transparent;
     border-style: none;
-    color: rgb(130, 130, 255);
+    color: rgb(0, 143, 0);
     font-size: 12px;
     font-weight: 600;
 }
@@ -94,7 +99,7 @@ body::-webkit-scrollbar-thumb{
 .mail{
     background-color: transparent;
     border: none;
-    color: rgb(255, 167, 255);
+    color: rgb(46, 34, 153);
     height: 0px;
     margin-right: 14rem;
     font-size: 17px;
@@ -106,19 +111,51 @@ body::-webkit-scrollbar-thumb{
 }
 
 .agustin p{
-    color: rgb(130, 130, 255);
+    color: rgb(0, 143, 0);
     font-size: 600;
+}
+
+.title-writer{
+    position: relative;
+    width: 600px;
+    height:100%;
+}
+
+.title-writer::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color:rgb(1, 107, 1);
+    background-color: rgb(15, 15, 19);
+    height: 100%;
+    animation: titW 1s steps(12), line 1s infinite;
+}
+
+
+@keyframes titW {
+    to{
+        width: 0%;
+    }
+    from{
+        width: 100%;
+    }
+}
+
+@keyframes line {
+    50%{
+        color: transparent;
+    }
 }
 
 #name{
     font-size: 62px;
-    color: rgb(130, 130, 255);
+    color: rgb(0, 143, 0);
 }
 
 #lastname{
     margin-left: 20px;
     font-size: 62px;
-    color: rgb(255, 167, 255);
+    color: rgb(46, 34, 153);
 }
 
 .welcome{
@@ -130,11 +167,11 @@ body::-webkit-scrollbar-thumb{
     font-size: 14px;
     border: none;
     border-radius: 7px;
-    background-color: rgb(255, 167, 255);
+    background-color: rgb(0, 143, 0);
     font-weight: 600;
-    box-shadow: 0px 6px 1px 7px rgba(130,130,255,0.44);
-    -webkit-box-shadow: 0px 6px 1px 7px rgba(130,130,255,0.44);
-    -moz-box-shadow: 0px 6px 1px 7px rgba(130,130,255,0.44);
+    box-shadow: 0px 6px 1px 7px rgb(46, 34, 153);;
+    -webkit-box-shadow: 0px 6px 1px 7px rgb(46, 34, 153);;
+    -moz-box-shadow: 0px 6px 1px 7px rgb(46, 34, 153);;
 }
 
 .social-networks > div{
@@ -144,7 +181,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: 2rem;
     margin-left: 1rem;
     border-radius: 50%;
-    background-color: rgb(199, 92, 92);
+    background-color: rgb(0, 143, 0);
     align-items: center;
     justify-content: center;
     border: 2px solid #F9F9F9;
@@ -176,21 +213,18 @@ body::-webkit-scrollbar-thumb{
     margin-left: 6rem;
 }
 
-.aboutme h1, h2{
-    color: rgb(255, 178, 245);
-    margin-bottom: 3rem;
-}
-
 .aboutme h1{
     font-size: 40px;
+    color: rgb(46, 34, 153);
 }
 
 .aboutme h2{
     font-size: 20px;
+    color: rgb(74, 56, 236);
 }
 
 .aboutme p{
-    color: rgb(130, 130, 255);
+    color: rgb(0, 143, 0);
     margin-bottom: 3rem;
     font-weight: 600;
     font-size: 15px;
@@ -203,20 +237,18 @@ body::-webkit-scrollbar-thumb{
     height: 90vh;
 }
 
-.portfolio h1, h2{
-    color: rgb(255, 178, 245);
-}
-
 .portfolio h1{
     font-size: 40px;
+    color: rgb(46, 34, 153);
 }
 
 .portfolio h2{
     font-size: 20px;
+    color: rgb(74, 56, 236);
 }
 
 .portfolio p{
-    color: rgb(130, 130, 255);
+    color: rgb(0, 143, 0);
 }
 
  .card-project-container{
@@ -228,7 +260,7 @@ body::-webkit-scrollbar-thumb{
     margin: 2rem;
     border: 1px solid rgb(255, 178, 245);
     border-radius: 2px;
-    background-color: rgb(60, 60, 160);
+    background-color: rgb(22, 22, 27);
 }
 
 .card-img{
@@ -268,12 +300,12 @@ body::-webkit-scrollbar-thumb{
 
 .portfolio::-webkit-scrollbar{
     width: 8px;
-    background-color: rgb(74, 74, 179);
+    background-color: rgb(0, 143, 0);
     opacity: .8;
 }
 
 .portfolio::-webkit-scrollbar-thumb{
-    background-color: rgb(92, 92, 230);
+    background-color: rgb(1, 80, 1);
     border-radius: 10px;
 }
 
@@ -282,51 +314,53 @@ body::-webkit-scrollbar-thumb{
     margin-left: 6rem;
 }
 
-.education h1, h2{
-    color: rgb(255, 178, 245);
-}
-
 .education h1{
     font-size: 40px;
+    color: rgb(46, 34, 153);
 }
 
 .education h2{
     font-size: 35px;
+    color: rgb(74, 56, 236);
 }
 
 .education h3{
-    color: rgb(130, 130, 255);
+    color: rgb(0, 143, 0);
     font-size: 30px;
 }
 
 .education p{
-    color: rgb(167, 167, 255);
+    color: rgb(0, 143, 0);
     font-weight: 600;
 }
 
 .education a{
     text-decoration: none;
-    background-color: rgb(255, 167, 255);
+    background-color: rgb(46, 34, 153);
     color:black;
     font-weight: 600;
     padding: .7rem 1.5rem;
 }
 
 .education a:hover{
-    background-color: rgb(253, 117, 253);
     border-radius: 15px;
     transition: all .5s;
 }
 
 .certify{
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
- .certify-date{
+
+.certify-date-B{
+    display: none;
+}
+
+.certify-date, .certify-date-B{
    right: 0;
 }
 
-.certify-date label{
- color: rgb(167, 167, 255);
+.certify-date label, .certify-date-B label{
+ color: rgb(46, 34, 153);
  font-weight: 600;
 }
 
@@ -346,7 +380,7 @@ body::-webkit-scrollbar-thumb{
 
 .skills h1{
     font-size: 40px;
-    color: rgb(255, 178, 245);
+    color: rgb(46, 34, 153);
 }
 
 .skills-divs{
@@ -355,7 +389,7 @@ body::-webkit-scrollbar-thumb{
 
 .skills-divs h2{
     font-size: 25px;
-    color: rgb(255, 131, 238);
+    color: rgb(74, 56, 236);
 }
 
 .skills-divs img{
@@ -365,7 +399,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .skills-divs label{
-    color: rgb(252, 242, 242);
+    color: rgb(0, 143, 0);
 }
 
 .skills-divs li{
@@ -379,7 +413,7 @@ body::-webkit-scrollbar-thumb{
 .contact h1{
     margin-left: 6rem;
     font-size: 40px;
-    color: rgb(252, 242, 242);
+    color: rgb(46, 34, 153);
 }
 
 .contact-divs{
@@ -396,18 +430,18 @@ body::-webkit-scrollbar-thumb{
 
 .contact-divs label{
     margin-left: .8rem;
-    color: rgb(252, 242, 242);
+    color: rgb(0, 143, 0);
 }
 
 .contact-divs b{
     margin-left: .8rem;
-    color: rgb(255, 131, 238);
+    color: rgb(0, 143, 0);
     font-weight: 400;
 }
 
 .contact-divs a{
     margin-left: .8rem;
-    color: rgb(255, 131, 238);
+    color: rgb(46, 34, 153);
 }
 
 .site{
@@ -419,14 +453,14 @@ body::-webkit-scrollbar-thumb{
 }
 
 .site label{
-    color: rgb(252, 242, 242);
+    color: rgb(0, 143, 0);
     font-weight: 600;
 }
 
 .site h3{
     font-size: 19px;
     margin-top: 3rem;
-    color: rgb(255, 131, 238);
+    color: rgb(46, 34, 153);
 }
 
 @media screen and (max-width: 1075px) {
@@ -488,7 +522,7 @@ body::-webkit-scrollbar-thumb{
         min-height: 612.33px;
     }
 
-    .certify-date{
+    .certify-date, .certify-date-B{
        bottom:3.5vh;
     }
 
@@ -508,6 +542,74 @@ body::-webkit-scrollbar-thumb{
         margin-left: 0;
     }
   
+}
+
+#agustinS:hover, #aboutmeS:hover, #portfolioS:hover, #educationS:hover, #skillsS:hover, #contactS:hover{
+    animation: shorcuts-anim 2s linear infinite;
+}
+
+@keyframes shorcuts-anim {
+    0%{
+        transform: translateY(0px);
+        color:rgb(0, 143, 0);
+    }
+    50%{
+        transform: translateY(-7px);
+        color: rgb(46, 34, 153);
+    }
+    100%{
+        transform: translateY(0px);
+        color:rgb(0, 143, 0);
+    }
+}
+
+@media screen and (max-width: 775px) {
+
+    .skills-divs{
+        margin-left: 0rem;
+    }
+
+    .certify-date{
+        display: none;
+    }
+
+    .certify-date-B{
+        display: block;
+    }
+    .agustin, .aboutme{
+        width: 100%;
+    }
+
+    .site{
+       margin-left: 0rem;
+    }
+
+    .contact h1{
+        margin-left: 0rem;
+        font-size: 40px;
+        color: rgb(46, 34, 153);
+    }
+    
+    .contact-divs{
+        margin-bottom: 1.5rem;
+        margin-left: 0rem;
+        font-size: 18px;  
+    }
+    
+    .contact-divs label{
+        margin-left: 0rem;
+        
+    }
+    
+    .contact-divs b{
+        margin-left: 0rem;
+    }
+    
+    .contact-divs a{
+        margin-left: 0rem;
+       
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -530,5 +632,11 @@ body::-webkit-scrollbar-thumb{
 
     .skills-divs{
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #aboutme-text {
+        font-size: 13.5px;
     }
 }
