@@ -11,8 +11,7 @@ body{
 body::-webkit-scrollbar{
     width: 8px;
     background-color: rgb(15, 15, 19);
-    opacity: .8;
-                                                
+    opacity: .8;                                              
 }
 
 body::-webkit-scrollbar-thumb{
@@ -21,8 +20,29 @@ body::-webkit-scrollbar-thumb{
 }
 
 
+#english{
+    display: none;
+}
+
 .father-div{
     border-bottom: 1px solid rgb(74, 74, 179);
+}
+
+.language{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+}
+
+.language button{
+    border: none;
+    color:rgb(74, 74, 179);
+    font-size: 19px;
+    background-color: transparent;
 }
 
 .shortcuts-container{
@@ -197,7 +217,7 @@ body::-webkit-scrollbar-thumb{
 
 .info, .aboutme-container, .portfolio-container, .education-container, .skills-container, .contact-container{
     left: 20%;
-    width: 79.5vw;
+    width: 79.6vw;
     height: 100vh;
     background-color: rgb(15, 15, 19);
     border-bottom: 1px solid rgb(255, 167, 255);
