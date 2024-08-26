@@ -6,6 +6,7 @@
 body{
     overflow-y: scroll;
     font-family: 'joystix', sans-serif;
+    background-color: rgb(15, 15, 19);
 }
 
 body::-webkit-scrollbar{
@@ -34,7 +35,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     z-index: 2;
     top: 1rem;
-    right: 1rem;
+    right: 3rem;
     background-color: transparent;
 }
 
@@ -43,6 +44,10 @@ body::-webkit-scrollbar-thumb{
     color:rgb(74, 74, 179);
     font-size: 19px;
     background-color: transparent;
+}
+
+.language-flags {
+    display: none;
 }
 
 .shortcuts-container{
@@ -128,6 +133,7 @@ body::-webkit-scrollbar-thumb{
 
 .agustin{
     margin-left: 6rem;
+    padding-left: .7rem;
 }
 
 .agustin p{
@@ -217,7 +223,7 @@ body::-webkit-scrollbar-thumb{
 
 .info, .aboutme-container, .portfolio-container, .education-container, .skills-container, .contact-container{
     left: 20%;
-    width: 79.6vw;
+    width: 79.6vw; /*100vw*/
     height: 100vh;
     background-color: rgb(15, 15, 19);
     border-bottom: 1px solid rgb(255, 167, 255);
@@ -564,7 +570,7 @@ body::-webkit-scrollbar-thumb{
   
 }
 
-#agustinS:hover, #aboutmeS:hover, #portfolioS:hover, #educationS:hover, #skillsS:hover, #contactS:hover{
+#agustinS:hover, #aboutmeS:hover, #portfolioS:hover, #educationS:hover, #skillsS:hover, #contactS:hover, .shorts:hover{
     animation: shorcuts-anim 2s linear infinite;
 }
 
@@ -632,7 +638,42 @@ body::-webkit-scrollbar-thumb{
     
 }
 
+@media screen and (max-width: 620px) {
+
+    .language{
+        display: none;
+    }
+
+    .language-flags{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+        top: 1rem;
+        /*right: 3rem;*/
+        background-color: transparent;
+    }
+
+    .language-flags button{
+        border: none;
+        background-color: transparent;
+    }
+    .info{
+        width: 100vw;
+    }
+
+    .mail{
+        margin-right: 0rem;
+    }
+    
+}
+
 @media screen and (max-width: 600px) {
+
+    
+    .title-writer{
+        width: 100%;
+    }
 
     .agustin{
         margin-left: 2vw;
@@ -659,4 +700,5 @@ body::-webkit-scrollbar-thumb{
     #aboutme-text {
         font-size: 13.5px;
     }
+
 }
