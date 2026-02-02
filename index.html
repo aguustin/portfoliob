@@ -94,7 +94,7 @@
                                         <span class="tech-tag">PAYLOAD CMS</span>
                                     </div>
                                     <div class="project-links">
-                                        <a href="goticketonline.com" class="project-link" target="_blank">
+                                        <a href="https://www.ipassi.com" class="project-link" target="_blank">
                                             <img src="link.png" alt=""> Ver sitio
                                         </a>
                                     </div>
@@ -540,8 +540,533 @@
 
         <!-- VERSION EN INGLÉS (estructura similar) -->
         <div class="father-div-container" id="english">
-            <!-- Contenido en inglés similar al español -->
-            <!-- Por brevedad, no incluyo toda la versión en inglés, pero seguiría la misma estructura -->
+            <!-- Selector de idioma -->
+            <div class="language">
+                <img src="left-angle.png" alt="">
+                    <button onclick="changeToSpanish()" class="lang-btn active">SPANISH</button>
+                    <button onclick="changeToEnglish()" class="lang-btn">ENGLISH</button>
+                <img src="rigth-angle.png" alt="">
+            </div>
+            <div class="language-flags">
+                <img src="left-angle.png" alt="">
+                    <button id="spanish-flag" onclick="changeToSpanish()"><img src="./spain.png" alt=""></button>
+                    <button id="english-flag" onclick="changeToEnglish()"><img src="./english.png" alt=""></button>
+                <img src="rigth-angle.png" alt="">
+            </div>
+            
+            <div class="father-div">
+                <!-- Sidebar de navegación -->
+                <div class="shortcuts-container position-fixed">
+                   <button type="button" id="more" class="menu-toggle"><img src="./more.png" alt=""></button>
+                   <div class="shortcuts mx-auto">
+                        <div class="profile-img-container">
+                            <img src="port_profile.png" alt="Profile" class="profile-img">
+                        </div>
+                        <div class="mx-auto mt-4">
+                            <button id="portfolioS" class="nav-btn">
+                                <span class="btn-icon">💼</span>
+                                <span>Portfolio</span>
+                            </button>
+                            <button id="agustinS" class="nav-btn">
+                                <span class="btn-icon">👤</span>
+                                <span>Profile</span>
+                            </button>
+                            <button id="aboutmeS" class="nav-btn">
+                                <span class="btn-icon">📖</span>
+                                <span>About me</span>
+                            </button>
+                            <button id="educationS" class="nav-btn">
+                                <span class="btn-icon">🎓</span>
+                                <span>Education</span>
+                            </button>
+                            <button id="skillsS" class="nav-btn">
+                                <span class="btn-icon">⚡</span>
+                                <span>Skills</span>
+                            </button>
+                            <button id="contactS" class="nav-btn">
+                                <span class="btn-icon">📧</span>
+                                <span>Contact</span>
+                            </button>
+                        </div>
+                   </div>
+                </div>
+
+                <!-- SECCIÓN PORTFOLIO -->
+                <div id="portfolio-container" class="portfolio-container position-relative d-flex">
+                    <div class="portfolio">
+                        <h1 class="section-title glitch" data-text="PORTFOLIO">PORTFOLIO</h1>
+                        <div class="pixel-divider"></div>
+                        <div class="card-project-container d-flex flex-wrap">
+                            <!-- GOTICKET -->
+                            <div class="card-project">
+                                <div class="card-img-wrapper">
+                                    <img class="card-img" src="./webs/goticket.png" alt="GoTicket">
+                                    <div class="card-overlay">
+                                        <span class="view-text">My Projects</span>
+                                    </div>
+                                </div>
+                                <div class="project-desc">
+                                    <h2 class="project-title">GOTICKET</h2>
+                                    <p>This web application enables the creation, management, and promotion of events of all types, streamlining both event organization and ticket sales.</p>
+                                </div>
+                                <div class="project-lenguages">
+                                    <div class="tech-tags d-flex flex-wrap">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">TAILWIND</span>
+                                        <span class="tech-tag">VITEJS</span>
+                                        <span class="tech-tag">NODEJS</span>
+                                        <span class="tech-tag">EXPRESS</span>
+                                        <span class="tech-tag">MONGODB</span>
+                                        <span class="tech-tag">PAYLOAD CMS</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://www.ipassi.com" class="project-link" target="_blank">
+                                            <img src="link.png" alt=""> Visit site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- VETERINARIA MyL -->
+                            <div class="card-project">
+                                <div class="card-img-wrapper">
+                                    <img class="card-img" src="./webs/veterinariaMyL.png" alt="Veterinaria MyL">
+                                    <div class="card-overlay">
+                                        <span class="view-text">Ver proyecto</span>
+                                    </div>
+                                </div>
+                                <div class="project-desc">
+                                    <h2 class="project-title">VETERINARIA MyL</h2>
+                                    <p>A web application designed to display and manage information for a veterinary clinic, including services, medical staff, schedules, and contact details.</p>
+                                </div>
+                                <div class="project-lenguages">
+                                    <div class="tech-tags d-flex flex-wrap">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">REACTJS</span>
+                                        <span class="tech-tag">NODEJS</span>
+                                        <span class="tech-tag">EXPRESS</span>
+                                        <span class="tech-tag">MONGODB</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://www.mylveterinarios.site/" class="project-link" target="_blank">
+                                            <img src="link.png" alt=""> Visit site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TASKSPY -->
+                            <div class="card-project">
+                                <div class="card-img-wrapper">
+                                    <img class="card-img" src="./webs/task.jpg" alt="TaskSpy">
+                                    <div class="card-overlay">
+                                        <span class="view-text">Ver proyecto</span>
+                                    </div>
+                                </div>
+                                <div class="project-desc">
+                                    <h2 class="project-title">TASKSPY</h2>
+                                    <p>A simple web application for task management, featuring an intuitive and functional user interface.</p>
+                                </div>
+                                <div class="project-lenguages">
+                                    <div class="tech-tags d-flex flex-wrap">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">NEXTJS</span>
+                                        <span class="tech-tag">DJANGO</span>
+                                        <span class="tech-tag">TAILWIND</span>
+                                        <span class="tech-tag">DOCKER</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/aguustin/pythonTasks/tree/final/" class="project-link" target="_blank">
+                                            <img src="github.png" alt=""> See code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TWEETERIO -->
+                            <div class="card-project">
+                                <div class="card-img-wrapper">
+                                    <img class="card-img" src="./webs/tweeterio.png" alt="Tweeterio">
+                                    <div class="card-overlay">
+                                        <span class="view-text">Ver proyecto</span>
+                                    </div>
+                                </div>
+                                <div class="project-desc">
+                                    <h2 class="project-title">TWEETERIO</h2>
+                                    <p>A web application developed as a full-featured simulator of the social network X.</p>
+                                </div>
+                                <div class="project-lenguages">
+                                    <div class="tech-tags d-flex flex-wrap">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">REACTJS</span>
+                                        <span class="tech-tag">NODEJS</span>
+                                        <span class="tech-tag">EXPRESS</span>
+                                        <span class="tech-tag">MONGODB</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/aguustin/tweteer/tree/finalDockerB" class="project-link" target="_blank">
+                                            <img src="github.png" alt=""> See code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- GOMARKET -->
+                            <div class="card-project">
+                                <div class="card-img-wrapper">
+                                    <img class="card-img" src="./webs/gomarket.png" alt="GoMarket">
+                                    <div class="card-overlay">
+                                        <span class="view-text">Ver proyecto</span>
+                                    </div>
+                                </div>
+                                <div class="project-desc">
+                                    <h2 class="project-title">GOMARKET</h2>
+                                    <p>A website showcasing GoMarket's services, including web development, digital marketing, and technology solutions.</p>
+                                </div>
+                                <div class="project-lenguages">
+                                    <div class="tech-tags d-flex flex-wrap">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">REACTJS</span>
+                                        <span class="tech-tag">NODEJS</span>
+                                        <span class="tech-tag">EXPRESS</span>
+                                        <span class="tech-tag">MONGODB</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://gomarket-2k15.onrender.com" class="project-link" target="_blank">
+                                            <img src="link.png" alt=""> Visit site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CATWIKI -->
+                            <div class="card-project">
+                                <div class="card-img-wrapper">
+                                    <img class="card-img" src="./webs/catiwiki.png" alt="CatWiki">
+                                    <div class="card-overlay">
+                                        <span class="view-text">Ver proyecto</span>
+                                    </div>
+                                </div>
+                                <div class="project-desc">
+                                    <h2 class="project-title">CATWIKI</h2>
+                                    <p>An educational web application about cats and their various breeds, providing detailed information.</p>
+                                </div>
+                                <div class="project-lenguages">
+                                    <div class="tech-tags d-flex flex-wrap">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">REACTJS</span>
+                                        <span class="tech-tag">NODEJS</span>
+                                        <span class="tech-tag">EXPRESS</span>
+                                        <span class="tech-tag">MONGODB</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/aguustin/catiwiki/tree/main" class="project-link" target="_blank">
+                                            <img src="github.png" alt=""> See code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN PERFIL -->
+                <div id="info" class="info position-relative d-flex">
+                    <div class="agustin">
+                        <div class="name-container">
+                            <div class="title-writer">
+                                <h1 id="name" class="glitch-name" data-text="AGUSTIN">AGUSTIN</h1>
+                                <h1 id="lastname" class="glitch-lastname" data-text="MOLE">MOLE</h1>
+                            </div>
+                            <div class="pixel-line"></div>
+                        </div>
+                        <p class="welcome">
+                            <span class="typewriter">WELCOME TO MY WEB DEVELOPER PORTFOLIO</span>
+                        </p>
+                        <div class="contact-info">
+                            <p class="contact-label">Contact me:</p>
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class="mail-link">
+                                <span class="mail-icon">✉</span> agustin.molee@gmail.com
+                            </a>
+                        </div>
+                        <a href="cv_.pdf" download>
+                            <button class="download-cv pixel-button">
+                                <span class="button-icon">⬇</span> Download my CV
+                            </button>
+                        </a>
+                        <div class="social-networks">
+                            <a href="https://www.instagram.com/agustinmolee/?next=%2F" target="_blank" class="social-link">
+                                <div class="social-icon">
+                                    <img src="instagram.png" alt="Instagram">
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/agustin.mole.9/" target="_blank" class="social-link">
+                                <div class="social-icon">
+                                    <img src="facebook.png" alt="Facebook">
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/agust%C3%ADn-mol%C3%A9-barolo-b042141b1/" target="_blank" class="social-link">
+                                <div class="social-icon">
+                                    <img src="linkedin.png" alt="LinkedIn">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN SOBRE MÍ -->
+              <div id="aboutme-container" class="aboutme-container p-3 position-relative d-flex">
+                <div class="aboutme">
+                    <h1 class="section-title glitch" data-text="SOBRE MI">ABOUT ME</h1>
+                    <div class="pixel-divider"></div>
+                    <div class="content-box">
+                        <p class="about-text">
+                            My name is <strong>Agustín Mole</strong>, I am 30 years old, and I am from Mendoza, Argentina.
+                        </p>
+                        <p class="about-text">
+                            My interest in programming began through video games, which led me to enroll in university. During my time there, I acquired essential foundations in programming and software engineering.
+                        </p>
+                        <p class="about-text">
+                            Every day of studying, every coding challenge, and every collaborative project helped me build a strong foundation in this exciting field.
+                        </p>
+                        <p class="about-text">
+                            The dynamic and ever-evolving nature of the web inspired me to dive into the <strong>MERN</strong> stack (MongoDB, Express, React, and Node.js) as well as <strong>Python + Django</strong>.
+                        </p>
+                        <p class="about-text">
+                            My skills led me to a position at <strong>DivisionGIS</strong>, where I contributed to geospatial software development. I also joined the <strong>Municipality of Godoy Cruz</strong> as a fullstack developer, where I built practical applications for the community and gained new knowledge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- SECCIÓN EDUCACIÓN -->
+               <div id="education-container" class="education-container p-3 position-relative d-flex">
+                    <div class="education">
+                        <h1 class="section-title glitch" data-text="EDUCACION">EDUCATION</h1>
+                        <div class="pixel-divider"></div>
+                        
+                        <div class="certify-card">
+                            <div class="certify-header">
+                                <h2 class="certify-title">FULLSTACK DEVELOPER</h2>
+                                <span class="certify-badge">UDEMY</span>
+                            </div>
+                            <h3 class="certify-subtitle">HTML, CSS, JAVASCRIPT, PHP, AND MYSQL</h3>
+                            <div class="certify-details">
+                                <span class="certify-duration">⏱ 103 hours</span>
+                                <span class="certify-date">📅 December 2021</span>
+                            </div>
+                            <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-09b65a8b-e7b2-47af-824e-f0d66d218253.jpg" class="certify-link pixel-button-small" target="_blank">View Certificate</a>
+                        </div>
+
+                        <div class="certify-card">
+                            <div class="certify-header">
+                                <h2 class="certify-title">REACT JS</h2>
+                                <span class="certify-badge">CODERHOUSE</span>
+                            </div>
+                            <h3 class="certify-subtitle">REACTJS, FIREBASE, AND TYPESCRIPT</h3>
+                            <div class="certify-details">
+                                <span class="certify-duration">⏱ 28 hours</span>
+                                <span class="certify-date">📅 April 2022</span>
+                            </div>
+                            <a href="https://www.coderhouse.com/certificados/629194325a1d3c001924e77e" class="certify-link pixel-button-small" target="_blank">View Certificate</a>
+                        </div>
+
+                        <div class="certify-card">
+                            <div class="certify-header">
+                                <h2 class="certify-title">REACT NATIVE</h2>
+                                <span class="certify-badge">UDEMY</span>
+                            </div>
+                            <h3 class="certify-subtitle">REACT NATIVE, REACTJS</h3>
+                            <div class="certify-details">
+                                <span class="certify-duration">⏱ 36.5 hours</span>
+                                <span class="certify-date">📅 October 2024</span>
+                            </div>
+                            <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-b09fde1b-84a0-4db4-bad3-01e2c19be3d2.jpg" class="certify-link pixel-button-small" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- SECCIÓN HABILIDADES -->
+               <div id="skills-container" class="skills-container position-relative p-3 d-flex">
+                    <div class="skills">
+                        <h1 class="section-title glitch" data-text="HABILIDADES">SKILLS</h1>
+                        <div class="pixel-divider"></div>
+                        
+                        <div class="skills-category">
+                            <h2 class="skills-subtitle">
+                                <span class="subtitle-icon">💻</span> PROGRAMMING LANGUAGES
+                            </h2>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <img src="html.png" alt="HTML">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="css.png" alt="CSS">
+                                    <span>CSS</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="js.png" alt="JavaScript">
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="php.png" alt="PHP">
+                                    <span>PHP</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="python.png" alt="Python">
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h2 class="skills-subtitle">
+                                <span class="subtitle-icon">⚙️</span> FRAMEWORKS AND LIBRARIES
+                            </h2>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <img src="reactjs.png" alt="React">
+                                    <span>ReactJS</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="nextjs.png" alt="Next.js">
+                                    <span>NextJS</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="nodejs.png" alt="Node.js">
+                                    <span>NodeJS</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="expressjs.png" alt="Express">
+                                    <span>ExpressJS</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="django.png" alt="Django">
+                                    <span>Django</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="react-native.png" alt="React Native">
+                                    <span>React Native</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h2 class="skills-subtitle">
+                                <span class="subtitle-icon">🗄️</span> DATABASES
+                            </h2>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <img src="mongodb.png" alt="MongoDB">
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="postgresql.png" alt="PostgreSQL">
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="mysql.png" alt="MySQL">
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="firebase.png" alt="Firebase">
+                                    <span>Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h2 class="skills-subtitle">
+                                <span class="subtitle-icon">🛠️</span> SOFTWARE AND TOOLS
+                            </h2>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <img src="visual-studio.png" alt="VS Code">
+                                    <span>VS Code</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="githubB.png" alt="GitHub">
+                                    <span>GitHub</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="postman.png" alt="Postman">
+                                    <span>Postman</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="docker.png" alt="Docker">
+                                    <span>Docker</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="bootstrap.png" alt="Bootstrap">
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="tailwind.png" alt="Tailwind">
+                                    <span>Tailwind</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-text">PayloadCMS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- SECCIÓN CONTACTO -->
+               <div id="contact-container" class="contact-container p-3 position-relative d-flex">
+    <div class="contact">
+        <h1 class="section-title glitch" data-text="CONTACTAME!">CONTACT ME!</h1>
+        <div class="pixel-divider"></div>
+        
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <div class="contact-info-detail">
+                    <label>Email</label>
+                    <a href="mailto:agustin.molee@gmail.com">agustin.molee@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <div class="contact-info-detail">
+                    <label>WhatsApp</label>
+                    <a href="https://wa.me/5492612086541">+549 2612086541</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-info">
+            <h3 class="site-title">SITE BUILT WITH:</h3>
+            <div class="site-tech">
+                <div class="tech-item">
+                    <img src="html.png" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="tech-item">
+                    <img src="css.png" alt="CSS">
+                    <span>CSS</span>
+                </div>
+                <div class="tech-item">
+                    <img src="js.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
         </div>
 
         <script src="index.js">

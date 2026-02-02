@@ -109,13 +109,18 @@ document.addEventListener('click', (e) => {
 // ==================== SCROLL ANIMATIONS ====================
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
+    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+    const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
+
+    // Devuelve true si alguna parte del elemento está visible
     return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.bottom >= 0 &&
+        rect.top <= windowHeight &&
+        rect.right >= 0 &&
+        rect.left <= windowWidth
     );
 }
+
 
 function handleScrollAnimations() {
     const animatedElements = document.querySelectorAll('.card-project, .certify-card, .skill-item, .contact-card');

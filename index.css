@@ -1111,3 +1111,7 @@ button:focus {
     outline: 3px solid var(--color-primary);
     outline-offset: 2px;
 }
+
+.ss{
+    color: white;
+}
